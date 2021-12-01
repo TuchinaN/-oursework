@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/venus.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/venus.jpg" class="img1" alt="The image is not visible">
+        </center>
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                    Привет!<br>
+                    Я Венера, вторая от Солнца планета, а так же второй по яркости объект на ночном небе. Я поднимась высоко над горизонтом, поэтому меня можно увидеть лишь незадолго до восхода и некоторое время после заката. За это меня называют Вечерней или Утренней звездой!
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Температура на моей поверхности очень высокая - примерно +477&deg; - из-за плотной атмосферы, состоящей в основном из углекислого газа. Она в 90 раз плотнее атмосферы Земли и создаёт парниковый эффект, не давая мой поверхности остывать. Вся моя атмосфера вовлечена в гиганский ураган и вращается вокруг меня со скоростью 120-140 м/с.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Я получила имя за своё сияние в честь римской богини красоты, любви и плодородия. Древние вавилоняне считали меня сестрой Луны и называли Светлой королевой неба.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>В отличие от Земли, я вращаюсь по часовой стрелке, поэтому Солнце надо мной встаёт на западе, а заходит на востоке.<br>
+                Я совершаю один оборот вокруг Солнца за 225 земных суток, а один оборот вокруг своей оси - за 243 земных дня.
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я очень похожа на Землю. Мой диаметр всего на 600 км меньше диаметра Земли, а масса составляет 80% массы вашей планеты. Учёные предполагают, что моё внутреннее строение также похоже на внутреннее строение Земли, однако у меня нет собственного магнитного поля, нет воды и нет возможности существования жизни.</p>
+            </div>
+        </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Венера</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Женский</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Нет</li>
+                <li>Способности: Фотокинез(излучение яркого разрушительного света)</li>
+                <li>Качества: Добрая, миролюбивая, скромная, оптимистичная</li>
+                <li>Любимые цвета: Тёплые оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/venus2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script> 
+    </main>
+</body>

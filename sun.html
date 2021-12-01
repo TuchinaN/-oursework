@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/sun.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/sun.jpg" class="img1" alt="The image is not visible">
+        </center>
+
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                      Приветик!<br>
+                      Меня зовут Солнце, и я нахожусь в самом центре системы, гордо носящей моё имя - Солнечной системы. Именно моё излучение - главный источник энергии на Земле.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Я молодая, достаточно крупная и яркая по сравнению со многими другими звёздами. Неловко это признвать, но я жарче любого огня: температура на моей поверхности достигает 6 тыс. градусов, а ядро, где происходят термоядерные реакции, и вовсе - более 14 млн градусов</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Мой диаметр составляет примерно 1,4 млн км. Это в 109 раз больше, чем диаметр Земли!<br>
+                Хотя астрономы и относят меня к классу звёзд "жёлтый карлик", на самом деле я свечусь белым светом. Жёлты же цвет мне придаёт ваша атмосфера. 
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>У меня мощное магнитное поле, которое оказывает большое влияние на вашу планету. Солнечные пятна и вспышки, северное сияние, геомагнитные бури, которые могут нарушить работу электроприборов и ухудшить самочувствие людей, вызваны активностью моего магнитного поля.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я довольно взрослая: мне около 4,6 млрд лет. Однако это не слишком много по сравнению с другими звёздами. Учёные относят меня к первому типу звёздного населения - это самые новые среди известных науке звёзд, в нас больше всего сложных химических элементов. Так что я ещё в расцвете сил по сравнению с звёздами второго и третьего типа!</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я вхожу в число самых ярких из 100 млрд звёзд нашей галактики Млечный Путь. Каждую секунду во мне сгорает 4 млн тонн вещества, превращаясь в излучение.<br>
+                А ещё я совершаю полный оборот вокруг своей оси примерно за 25 с половиной земных суток!
+                </p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr>
+    </main>
+</body>

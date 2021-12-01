@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mercury.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/mercury.jpg" class="img1" alt="The image is not visible">
+        </center>
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                    Здравсвуйте!<br>
+                    Я Меркурий, самая близкая к Солнцу и самая маленькая планета солнечной системы. Из-за близости к Солнцу почти вся моя поверхность очень горячая, поэтому я одинок и на мне жизнь невозможна. Даже спутников у меня нет!
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Первые упоминания обо мне встречаются в вавилонских астрономичесих таблицах 14 в. до н.э. Имя я получил по имени римского бога торговли Меркурия благодаря своему стремительному движению по небу</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Я немногим больше Луны, мой диаметр составляет около 4900 км, также я уступаю в размерах Ганимеду, спутнику Сатурна. Однако у меня очень большое и тяжёлое металлическое ядро, поэтому я в 5 раз тяжелее Луны!</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Астрономы договорились называть мои кратеры в честь великих философов, поэтов, писателей и художников. Так мои самые крупные кратеры - Рембрандт, Бетховен, Достоевский и Шекспир.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Хотя я и нахожусь ближе всех планет к Солнцу, я всё же не самая горячая планета Солнечной системы. Из-за моего медленного вращения вокруг своей оси обращённая к Солнцу сторона разогревается до +427&deg;, но обратная охлаждается до -193&deg;. На глубине всего 1 м температура уже почти не меняется и составляет +75&deg;.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я совершаю один оборот вокруг своей оси почти за 59 земных суток.<br>
+                Моё небо всегда чёрное, потому что у меня практически нет атмосферы. Солнце у меня на небе выглядит в 2-3 раза больше, чем с Земли, и совершает по небу движения по причудливым линиям.
+                </p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Меркурий</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Мужской</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Нет</li>
+                <li>Способности: Супер скорость</li>
+                <li>Качества: Активный, смешной, рассеянный, нетерпеливый</li>
+                <li>Любимые цвета: Тёмные оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/mercury2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script> 
+    </main>
+</body>

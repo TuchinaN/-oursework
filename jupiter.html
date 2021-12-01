@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jupiter.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/jupiter.jpg" class="img1" alt="The image is not visible">
+        </center>
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                    Здравствуйте!<br>
+                    Я Юпитер, самая большая планета, пятая по счёту от солнца я в 2,5 раза тяжелее всех прочих планет Солнечной системы вместе взятых. Мой диаметр составляет почти 143 тыс. км, что больше чем в 11 раз превышает диаметр Земли. А ещё я в 1000 раз легче Солнца и в 317 раз тяжелее Земли.
+                </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Я вращаюсь вокруг своей оси быстрее, чем любая другая планета. Сутки здесь длятся всего 9 земных часов и 55 минут. Из-за этого в моей атмосфере возникают ветры скоростью более 600 км/ч, а сам я заметно сплюснут с плюсов. Я совершаю оборот вокруг Солнца за 11,8 земных года.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Мой спутник Ганимед - крупнейший спутник в Солнечной системе. Его диаметр 5268 км, это больше, чем диаметр Меркурия, и 2 раза больше диаметра Луны. Он так велик что обладает собственным магнитным полем.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Меня, как и другие планеты внешней области Солнечной системы, называют газовым гигантом. Большая часть планеты состоит из газов: водорода, гелия, аммиака. Предположительно, водород на у меня находится как в виде газа, так и видишь жидкости.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я - одно из самых ярких небесных тел, поэтому был известен с древности. В 7-8 вв. до н.э. вавилонские астрономы называли меня Белой звездой и связывали с верховным божеством Мардуком. Римляне также дали мне имя своего главного бога-громовержца.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я так велик, что изучить моё внутреннее строение наука пока не в состоянии. По предположениям учёных, в центре находттся каменное ядро, которое тяжелее Земли в 10 раз. Вокруг ядра находятся слои металлического и жидкого водорода, а над ними - газовая атмосфера. На мне даже иногда бывают штормы грозы с молниями и полярные сияния.</p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Юпитер</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Мужской</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Есть (79 шт.)</li>
+                <li>Способности: Супер сила, атмокинез(способность влиять на погодные условия)</li>
+                <li>Качества: Доверчивый, решительный, свободолюбивый, безрассудный</li>
+                <li>Любимые цвета: Тёплые оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/jupiter2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>   
+    </main>
+</body>

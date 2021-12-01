@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/uranium.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/uranus.jpg" class="img1" alt="The image is not visible">
+        </center>
+
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                      Доброго времени суток, господа Уран!<br>
+                      Я Уран, самая холодная планета, седьмая по счёту от Солнца и третья по размеру после Юпитера и Сатурна планета Солнечной системы. Я обладаю уникальной особенностью: я наклонен к своей орбите почти под прямым углом и вращаюсь, словно лежа на боку.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>В 1977 г. американские астрономы Элиот и Данем случайно обнаружили, что я имеют тонкие, почти прозрачные кольца. На сегодняшний день известно о 13 кольцах, одно из которых имеет красный цвет, еще одно - синий. Кольца состоят из очень мелких частиц размером от нескольких микрон до 1 м.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Я получают очень мало энергии от Солнца и почти не излучаю собственного внутреннего тепла. Температура моей атмосферы составляет всего - 224 , и это делает меня самой холодной планетой Солнечной системы.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я был открыт в 18 в. и получил название "Звезда Георга" в честь британского короля Георга III. Позднее меня переименовали в честь божества неба Урана. Кстати, только у меня имя греческого, а не римского бога.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>На сегодняшний день известно 27 моих спутников: 5 крупных, остальные значительно меньше. Названия спутникам даются в честь персонажей произведения У. Шекспира и А. Поупа.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Мой год равен 84 земным годам, а один оборот вокруг своей оси я совершаю за 17 часов и 14 минут. Но из-за большого наклона к моей орбите смена дня и ночи на моих полюсах происходит один раз в половину уранианского года, то есть каждые 42 земных года.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я являюсь газовым гигантом, поскольку моя оболочка состоит из газов водорода и гелия. Под ней находится мантии, состоящая из воды, аммиака и метана. Хотя эта смесь является очень горячей и плотной жидкостью, ее принято называть "льдами", благодаря чему я считаюсь "ледяным гигантом".</p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(7)"></span>    
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Уран</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Мужской</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Есть (27 шт.)</li>
+                <li>Способности: Аэрокинез(манипуляция ветром и воздухом), криокинез(способность замораживать)</li>
+                <li>Качества: Толерантный, стеснительный, умный, нерешительный</li>
+                <li>Любимые цвета: Холодные оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/uranus2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>   
+    </main>
+</body>

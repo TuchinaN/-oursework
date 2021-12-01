@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/mars.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/mars.jpg" class="img1" alt="The image is not visible">
+        </center>
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                    Ну привет!<br>
+                    Я Марс, Красная планета, четвёртая от солнца планета Солнечной системы и предпоследняя по размеру среди планет. Я - планета земной группы, у меня есть атмосфера, хотя и очень разреженная, а также вулканы, горы, пустыни и полярные ледниковые шапки, как у Земли.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Я не только выгляжу красным на Земном небе, моя поверхность действительно имеет красноватый оттенок. Это происходит из-за того, что в почве имеется большое количество окислов железа, известных как ржавчина. В целом моя почва близка по составу земной.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Я почти вдвое меньше Земли по диаметру, который составляет 6779 км, и лишь немногим больше Меркурия. Площадь моей поверхности равна площади суши на Земле, а моя масса составляет лишь десятую часть массы Земли.<br>
+                Я нахожусь примерно в полтора раза дальше от Солнца, чем Земля.
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я назван в честь древнеримского бога войны Марса, которого в Греции называли Аресом. Мой красноватый цвет во многих культурах ассоциировался с кровью и огнем. Название моих спутников тоже ассоциируется с войной: Фобос и Деймос означают "страх" и "ужас".</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Моя атмосфера состоит в основном из углекислого газа и очень разреженна. Давление на моей поверхности в 160 раз меньше, чем давление на поверхности Земли. Температура здесь колеблется от -153&deg; на полюсе зимой до +20&deg; на экваторе. Средняя температура составляет -50&deg;.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Как и у Земли, моя ось вращения наклонена к орбите, поэтому здесь есть смена времён года. Кстати, год на мне длится 687 земных дней, а сутки почти равны земным и составляют 24 часа 39 минут.</p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Марс</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Мужской</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Есть</li>
+                <li>Способности: Пирокинез(манипуляция огонём силой мысли)</li>
+                <li>Качества: Импульсивный, агрессивный, упрямый, отдалённый</li>
+                <li>Любимые цвета: Тёплые оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/mars2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>   
+    </main>
+</body>

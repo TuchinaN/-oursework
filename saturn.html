@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/saturn.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/saturn.jpg" class="img1" alt="The image is not visible">
+        </center>
+
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                      Всем привет!<br>
+                      Я Сатурн, планета-жемчужина.Многие астрономы считают меня, шестую от Солнца планету, самой красивой в Солнечной системе благодаря его удивительным кольцам. Я - самая дальняя планета, которую можно увидеть невооружённым глазом. Я вторая по размерам планета Солнечной системы, уступаю только Юпитеру, отстою от Солнца в 10 раз дальше, чем Земля.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Все планеты внешней области имеют кольца, но у меня они самые широкие. Кольца состоят из миллиардов мельчайших частиц льда с некоторой примесью камней. Хотя диаметр колец составляет 250 тыс. км, их толщина не достигает и километра. Происхождение колец науки пока неясно.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>По предположениям астрономов у меня внутри есть ядро массой от 9 до 22 массы Земли, состоящее из металлов, силикатов и, возможно, льда. Вокруг ядра располагается слой металлического водорода в смеси с гелем. Моя атмосфера состоит в основном из водорода, с небольшой примесью гелия и других газов. В ней дуют мощнейшие ветры - до 500 м/с.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Известно уже более 60 моих спутников, и учёные продолжают открывать новые. Самый крупный мой спутник - Титан, это второй по размеру спутник в Солнечной системе, он больше Меркурия. И это единственный объект Солнечной системе, кроме Земли, на котором есть жидкая вода. Титан также единственный спутник в Солнечной системе, обладающий собственной плотной атмосферой.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Хотя я ненамного уступаю Юпитеру по размеру, я намного легче, и моя средняя плотность в 1,5 раза меньше плотности воды и в 8 раз меньше плотности Земли. Если представить гигантский бассейн, в котором планеты могли бы поместиться, я стал бы единственной планетой Солнечной системы, которая могла бы плавать.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Мой год длится 29,5 земных года, а вокруг своей оси я делаю полный оборот за 10 земных часов и 34 минуты. Я излучаю в космос в 2,5 раза больше энергии, чем получаю от Солнца.</p>
+            </div>
+        </div>
+      
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Сатурн</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Женский</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Есть (82 шт.)</li>
+                <li>Способности: Телепатия, ясновидение</li>
+                <li>Качества: Спокойная, понимающая, честная, интеллектуальная</li>
+                <li>Любимые цвета: Тёплые оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/saturn2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>   
+    </main>
+</body>

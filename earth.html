@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/earth.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/earth.jpg" class="img1" alt="The image is not visible">
+        </center>
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                    Приветик! Узнал меня?<br>
+                    Я Земля, единственная обитаемая планета нашей Солнечной системы, занимаю третье место от Солнца и являюсь крупнейшей планетой земной группы. Хотя я и уступаю в размерах всем планетам внешней области Солнечной системы, я тем не менее имею самую высокую плотность. Благодаря атмосфере и океанам я из космоса выгляжу голубой планетой.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Я состою из нескольких слоев. Снаружи находится земная кора толщиной от 6 до 70 км, состоящая из гранитных, базальтовых и осадочных пород. Под корой глубиной почти дл 3000 км располагается мантия. Под ней скрывается железо-никелевое ядро - твердое внутри, но с жидкой внешней оболочкой.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Более 70% моей поверхности покрыто водой. Она регулирует климат, она же способствовала появлению жизни.<br>
+                Смена времён года происходит благодаря тому, что ось вращения наклонена к моей орбите. Вращаясь вокруг Солнца, я подставляю ему то одно полушарие, то другое. При этом на экватор в любое время года солнечного света попадает больше, чем на полюсы.
+                </p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Из-за взаимодействия с Луной земные сутки каждый день увеличиваются, но эта прибавка так мала, что составляет всего сотую долю секунды за 100 лет.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Из-за того, что моя ось наклонена по отношению к орбите, в областях вокруг Северного и Южного полюсов возникают полярные ночи и полярные дни, когда Солнце не появляется над горизонтом или не опускается за горизонт в период дольше суток.</p>
+            </div>
+        </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Земля</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Женский</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Луна</li>
+                <li>Способности: Геокинез(манипуляция землёй)</li>
+                <li>Качества: Харизматичная, лояльная, любопытная, общительная</li>
+                <li>Любимые цвета: Тёплые оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/earth2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>  
+    </main>
+</body>

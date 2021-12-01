@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ html{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 0.4cm;
+    background-size: 100%;
+    background-image: linear-gradient(43deg, #b8e005 0%, #d52f67 46%, #b10e0e 100%);
+ }
+
+ body {
+    width: 100%; 
+    height: 100%;
+   
+  }
+
+nav {
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    padding: 100px;
+}
+
+ul {
+   list-style: none;
+}
+
+.topmenu {
+   width: 100%;
+  display: flex;
+  justify-content: center;
+  background: seashell;
+}
+
+.topmenu a {
+   text-decoration: none;
+   display: block;
+}
+
+.topmenu>li>a {
+   padding: 20px;
+   color: #767676;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: 'Exo 2', sans-serif;
+}
+
+.topmenu li a:hover {
+   color: #c0a97a;
+}
+
+.topmenu>li {
+   position: relative;
+}
+
+.topmenu>li:after {
+   content: "";
+   position: absolute;
+   right: 0;
+   width: 1px;
+   height: 12px;
+   background: #d2d2d2;
+   top: 24px;
+   box-shadow: 4px -2px 0 #d2d2d2;
+   transform: rotate(30deg);
+}
+
+.submenu {
+   position: absolute;
+   left: 50%;
+   top: 100%;
+   width: 210px;
+   margin-left: -105px;
+   background: #fafafa;
+   border: 1px solid #ededed;
+   z-index: 5;
+   visibility: hidden;
+   opacity: 0;
+   transform: scale(.8);
+   transition: .4s ease-in-out;
+}
+.topmenu>li:hover .submenu {
+   visibility: visible;
+   opacity: 1;
+   transform: scale(1);
+}
+.submenu li a {
+   text-align: center;
+   padding: 10px 0;
+   margin: 0 10px;
+   border-bottom: 1px solid #efefef;
+   font-size: 12px;
+   color: #484848;
+   font-family: 'Kurale', serif;
+}
+
+.topmenu>li>a {
+   padding: 20px;
+   color: #767676;
+   text-transform: uppercase;
+   font-weight: bold;
+   letter-spacing: 1px;
+   font-family: 'Exo 2', sans-serif;
+}
+
+.topmenu li a:hover {
+   color: #c0a97a;
+}
+
+ .img1{
+    margin: 30px;
+    max-height: 300px;
+    max-width: 306px;
+}
+
+.img1:hover{
+   transform: scale(1.2);
+}
+
+ /* Собственно сам слайдер */
+.slider{
+    max-width: 80%;
+    position: relative;
+    
+    height: 300px;
+    margin-bottom: 130px;
+    margin: auto;
+}
+/* Картинка мастабируется по отношению к родительскому элементу */
+.slider .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+}
+
+/* Кнопки вперед и назад */
+.slider .prev, .slider .next {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+
+.slider .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* При наведении на кнопки добавляем фон кнопок */
+
+.slider .prev:hover,
+.slider .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Заголовок слайда */
+.slideText {
+   font-size: 1.3em;
+    position: absolute;
+    color: #fff;
+    /* Выравнивание текста по горизонтали и по вертикали*/
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    /* Тень*/
+    text-shadow: 1px 1px 1px #000, 0 0 1em #000;
+}
+
+
+/* Кружочки */
+
+.slider-dots {
+  text-align: center;
+ 
+}
+.slider-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.slider-dots_item:hover {
+    background-color: #aaa;
+}
+
+
+/* Анимация слайдов */
+
+.slider .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@media(max-width:600px) {
+   .topmenu>li>a {
+       padding: 15px 20px;
+    }
+
+    .submenu li a {
+       padding: 10px 20px;
+       margin: 0 20px;
+    }
+
+   .img1{
+       height: 200px;
+       width: 204px;
+   }
+   .slideText{
+       font-size: 1.1em;
+   }
+   .img2{
+       height: 200px;
+   }
+}

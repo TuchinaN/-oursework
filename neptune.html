@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.favicon.by/ico/619e3dd395f57.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/neptune.css">
+    <title>Солнечная система</title>
+</head>
+<body>
+    <header>
+        <ul class="topmenu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="">Космические объекты</a>
+               <ul class="submenu">
+                  <li><a href="sun.html">Солнце</a></li>
+                  <li><a href="mercury.html">Меркурий</a></li>
+                  <li><a href="venus.html">Венера</a></li>
+                  <li><a href="earth.html">Земля</a></li>
+                  <li><a href="mars.html">Марс</a></li>
+                  <li><a href="jupiter.html">Юпитер</a></li>
+                  <li><a href="saturn.html">Сатурн</a></li>
+                  <li><a href="uranium.html">Уран</a></li>
+                  <li><a href="neptune.html">Нептун</a></li>
+               </ul>
+            </li>
+            <li><a href="gallery.html">Галерея с артами</a>
+         </ul>
+    </header>
+
+    <main>
+        <center>
+           <br><img src="img/neptune.jpg" class="img1" alt="The image is not visible">
+        </center>
+
+        <div class="slider">
+            <div class="item">
+              <div class="slideText">
+                  <p>
+                      Всем здравствуйте!<br>
+                      Я восьмая и самая дальняя от Солнца планета. Я назван в честь римского бога морей благодаря яркому синему цвету своей атмосферы. Я первая планета, обнаруженная благодаря математическим расчётам, а не прямому наблюдению. Астрономы предположили мое существование, изучая орбиты Урана. Я же был обнаружен в 1846 году.
+                  </p>
+              </div>
+          </div>
+      
+          <div class="item">
+            <div class="slideText">
+                <p>Мое строение очень похоже на строение Урана. Внутри находится ядро массой чуть больше массы Земли, состоящее из железа, никеля и силикатов. Ядро окружено мантией из очень горячей смеси воды, аммиака и метана. Верхний слой составляет водородно-гелиевая атмосфера. Главное различие между мной и Ураном - климат. На Уране атмосфера малоподвижная, а на мне ветры дуют с почти сверхзвуковой скоростью - до 600 м/с.</p>
+            </div>
+        </div>
+      
+        <div class="item">
+            <div class="slideText">
+                <p>Моя атмосфера состоит из водорода, гелия и примесей других газов. Синий цвет мне продают примеси метана, который поглощает волны красного света.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Я удалён от Солнца на 4,5 млрд км, это в 30 раз дальше, чем Земля. Планета совершает полный оборот по орбите почти за 165 земных лет. С тех пор, как меня открыли, у меня только-только прошел один год. Сутки здесь длятся 16 земных часов.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Известно 14 моих спутников, крупнейшим из которых является Тритон. Это единственный крупный спутник в Солнечной системе, который движется в направлении, обратном вращению своей планеты.</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="slideText">
+                <p>Как и у других планет гигантов, у меня есть система колец, но не таких обширных, как у Сатурна. Предположительно, кольца состоят из частиц льда в смеси с соединениями углерода, которые придают им красноватый оттенок.</p>
+            </div>
+        </div>
+
+            <a class="prev" onclick="minusSlide()">&#10094;</a>
+            <a class="next" onclick="plusSlide()">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="slider-dots">
+          <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+            <span class="slider-dots_item" onclick="currentSlide(3)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(4)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(5)"></span>
+            <span class="slider-dots_item" onclick="currentSlide(6)"></span>  
+      </div>
+      <script src="js/sun.js"></script>
+      <br><hr><br>
+      <center><button id="myBtn">Хотите увидеть мою человеческую версию?</button></center>
+      <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Нептун</h2>
+          </div>
+          <div class="modal-body">
+            <ul>
+                <li>Пол: Женский</li>
+                <li>Возраст: 4.5 биллионов лет</li>
+                <li>Спутник: Есть (14 шт.)</li>
+                <li>Способности: Гидрокинез(манипуляция жидкостями), криокинез(способность замораживать)</li>
+                <li>Качества: Гордая, суетливая, саркастичная, перфекционист</li>
+                <li>Любимые цвета: Холодные оттенки</li>
+            </ul>
+            <center>
+               <br><img src="img/neptune2.jpg" class="img2" alt="The image is not visible">
+             </center>
+          </div>
+        </div>
+      </div>
+      <script src="js/button.js"></script>   
+    </main>
+</body>
